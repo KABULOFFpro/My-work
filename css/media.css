@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body: #151437;
+        --txt-color: #fff;
+        --dots-color: #ebebeb;
+        --tabs-color: #151437;
+        --footer-link-color: #fff;
+    }
+
+    .logo::before {
+        content: url(../img/svg/logo-dark.svg);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: calc(28px + (12 + 12 * 0.7) * (100vw - 320px) / 1920);
+    }
+}
